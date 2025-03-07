@@ -1,18 +1,22 @@
 export const navigationRoutes = [
     {
         path: '/',
-        name: 'Home',
+        name: 'Inicio',
     },
     {
-        path: '/about',
-        name: 'About',
+        path: '/',
+        name: 'Productos',
     },
     {
-        path: '/services',
-        name: 'Services',
+        path: '/',
+        name: 'Empresas',
     },
     {
-        path: '/contact',
-        name: 'Contact',
+        path: '/',
+        name: 'Cursos',
+    },
+    {
+        path: '/',
+        name: 'Tutoriales',
     }
 ];
