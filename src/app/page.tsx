@@ -27,12 +27,12 @@ export default function Home() {
         <ul className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {
             products.map((product, index) => (
-              <ProductCard 
+              <ProductCard
+                slug={product.slug}
                 key={index}
                 image={product.image}
                 name={product.name}
                 price={product.price}
-                path={product.path}
                 company={product.company}
               />
             ))

@@ -3,19 +3,21 @@ import Image from "next/image"
 import Link from "next/link"
 import { FaMinus, FaPlus } from "react-icons/fa"
 
+const PRODUCT_SINGLE_URL = "/product";
+
 interface Props {
     name: string,
+    slug: string
     price: number,
     company: number,
     image: string
-    path: string
 }
 
-export default function ProductCard({name, price, company, image, path} : Props) {
+export default function ProductCard({name, slug, price, company, image} : Props) {
 
     return(
         <li className="flex flex-col rounded-2xl overflow-hidden bg-white">
-            <Link className="w-full h-auto aspect-square" href={path}>
+            <Link className="w-full h-auto aspect-square" href={`/${PRODUCT_SINGLE_URL}/${slug}`}>
                 <Image className="size-full object-contain" src={image} alt={name.toLocaleLowerCase()} width={480} height={480} />
             </Link>
             <div className="flex flex-col justify-center text-center p-4 flex-1 gap-8">

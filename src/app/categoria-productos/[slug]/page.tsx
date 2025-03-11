@@ -32,7 +32,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
             image={product.image}
             name={product.name}
             price={product.price}
-            path={product.path}
+            slug={product.slug}
             company={product.company}
           />
         ))}
