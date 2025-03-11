@@ -42,7 +42,7 @@ export default function Home() {
       <section className="flex flex-col gap-8 py-16 px-4 max-w-[1536px] mx-auto text-white">
         <h2 className="text-4xl font-bold font-alegreya">{dictionary.home.advantages.title}</h2>
         <div className="grid lg:grid-cols-2 gap-8">
-          <Image className="h-full w-full object-cover" src="/ilustration_home_advantages.webp" alt="ilustration advantages" width={748} height={720} />
+          <Image className="h-full w-full rounded-2xl object-cover" src="/ilustration_home_advantages.webp" alt="ilustration advantages" width={748} height={720} />
           <ul className="flex flex-col gap-8 text-white py-8">
             {
               dictionary.home.advantages.items.map((advantage, index) => (

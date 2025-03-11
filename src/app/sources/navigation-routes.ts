@@ -4,7 +4,7 @@ export const navigationRoutes = [
         name: 'Inicio',
     },
     {
-        path: '/',
+        path: '/productos',
         name: 'Productos',
     },
     {

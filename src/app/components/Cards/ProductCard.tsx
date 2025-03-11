@@ -13,7 +13,7 @@ interface Props {
 export default function ProductCard({name, price, publishedBy, image, path} : Props) {
 
     return(
-        <li className="flex flex-col bg-white">
+        <li className="flex flex-col rounded-2xl overflow-hidden bg-white">
             <Link className="w-full h-auto aspect-square" href={path}>
                 <Image className="size-full object-contain" src={image} alt={name.toLocaleLowerCase()} width={480} height={480} />
             </Link>

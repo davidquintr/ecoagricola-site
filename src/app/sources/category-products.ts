@@ -1,22 +1,34 @@
 export const categoryProducts = [
     {
         name: "Fertilizantes",
-        path: "/",
+        slug: "fertilizantes",
+        description: "Productos diseñados para mejorar la fertilidad del suelo y promover el crecimiento saludable de las plantas.",
+        path: "/categoria-productos/fertilizantes",
+        icon: "/category-product/fertilizer_icon.webp",
         image: "/category-product/fertilizer.webp"
     },
     {
         name: "Apicultura",
-        path: "/",
+        slug: "apicultura",
+        description: "Equipos y suministros para la cría y manejo de abejas, así como la producción de miel y otros productos apícolas.",
+        path: "/categoria-productos/apicultura",
+        icon: "/category-product/beekeeping_icon.webp",
         image: "/category-product/beekeeping.webp"
     },
     {
         name: "Herramientas",
-        path: "/",
+        slug: "herramientas",
+        description: "Herramientas esenciales para diversas tareas agrícolas y de jardinería.",
+        path: "/categoria-productos/herramientas",
+        icon: "/category-product/tools_icon.webp",
         image: "/category-product/tools.webp"
     },
     {
         name: "Semillas",
-        path: "/",
-        image: "/category-product/feed.webp"
+        slug: "semillas",
+        description: "Variedad de semillas para el cultivo de diferentes tipos de plantas y vegetales.",
+        path: "/categoria-productos/semillas",
+        icon: "/category-product/seeds_icon.webp",
+        image: "/category-product/seeds.webp"
     }
 ]

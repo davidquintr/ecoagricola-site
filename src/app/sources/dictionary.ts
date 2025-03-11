@@ -47,5 +47,13 @@ export const dictionary = {
                 }
             ]
         }
+    },
+    products_page: {
+        title: "Productos",
+        description: "Ofrecemos una amplia selección de productos agrícolas frescos y de alta calidad, directamente del campo a tu hogar o negocio. Contamos con frutas y verduras de temporada, semillas, fertilizantes, herramientas y todo lo necesario para garantizar una producción eficiente y sostenible.",
+        icon: "/pages/products_icon.webp",
+    },
+    category_products_page: {
+        title: "Categorías de Productos",
     }
 }
