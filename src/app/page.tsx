@@ -33,7 +33,7 @@ export default function Home() {
                 name={product.name}
                 price={product.price}
                 path={product.path}
-                publishedBy={product.publishedBy}
+                company={product.company}
               />
             ))
           }

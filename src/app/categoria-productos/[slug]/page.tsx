@@ -33,7 +33,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
             name={product.name}
             price={product.price}
             path={product.path}
-            publishedBy={product.publishedBy}
+            company={product.company}
           />
         ))}
       </ul>

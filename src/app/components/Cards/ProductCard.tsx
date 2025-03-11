@@ -1,3 +1,4 @@
+import { companies } from "@/app/sources/companies"
 import Image from "next/image"
 import Link from "next/link"
 import { FaMinus, FaPlus } from "react-icons/fa"
@@ -5,12 +6,12 @@ import { FaMinus, FaPlus } from "react-icons/fa"
 interface Props {
     name: string,
     price: number,
-    publishedBy: string,
+    company: number,
     image: string
     path: string
 }
 
-export default function ProductCard({name, price, publishedBy, image, path} : Props) {
+export default function ProductCard({name, price, company, image, path} : Props) {
 
     return(
         <li className="flex flex-col rounded-2xl overflow-hidden bg-white">
@@ -21,7 +22,7 @@ export default function ProductCard({name, price, publishedBy, image, path} : Pr
                 <div className="flex flex-col gap-1 flex-1 text-primary-500">
                     <h3 className="text-4xl font-extrabold text-primary-600">{name}</h3>
                     <span className="text-3xl">C${price}</span>
-                    <span>Publicado por {publishedBy}</span>
+                    <span>Publicado por {companies[company]?.name}</span>
                 </div>
                 <div className="flex gap-4 text-primary-500">
                     <div className="hidden xl:flex gap-2 items-center">
