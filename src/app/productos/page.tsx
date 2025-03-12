@@ -10,7 +10,7 @@ export default function Productos() {
             <ul className="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-[1536px] mx-auto px-4 py-8 sm:py-16 lg:py-48">
                 {
                 categoryProducts.map((cat, index) => (
-                    <CategoryProductCardExtended icon={cat.icon} description={cat.description} name={cat.name} path={cat.path} key={index} />
+                    <CategoryProductCardExtended icon={cat.icon} description={cat.description} name={cat.name} slug={cat.slug} key={index} />
                 ))
                 }
             </ul>

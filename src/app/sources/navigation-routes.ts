@@ -8,7 +8,7 @@ export const navigationRoutes = [
         name: 'Productos',
     },
     {
-        path: '/',
+        path: '/empresas',
         name: 'Empresas',
     },
     {
