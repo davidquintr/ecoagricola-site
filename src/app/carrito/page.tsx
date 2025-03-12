@@ -219,7 +219,7 @@ export default function Carrito() {
                                             <input
                                                 required
                                                 type="text"
-                                                placeholder="Apellidos"
+                                                placeholder="CVC"
                                                 className="p-2 border border-gray-300 rounded-md"
                                             />
                                         </div>
