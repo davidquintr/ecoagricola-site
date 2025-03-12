@@ -76,7 +76,7 @@ export const products = [
         rate: 4.5,
         company: 0,
         images: ["/products/Apicultura/ahumador.webp"],
-        category: 0
+        category: 1
     },
     {
         name: 'Blusón poliamida',
@@ -87,7 +87,7 @@ export const products = [
         rate: 4.5,
         company: 0,
         images: ["/products/Apicultura/blusonPoliamida.webp"],
-        category: 0
+        category: 1
     },
     {
         name: 'Colmena Langstroth',
@@ -98,7 +98,7 @@ export const products = [
         rate: 4.5,
         company: 0,
         images: ["/products/Apicultura/colmena.webp"],
-        category: 0
+        category: 1
     },
     {
         name: 'Bota Apicultor 990',
@@ -109,7 +109,7 @@ export const products = [
         rate: 4.5,
         company: 0,
         images: ["/products/Apicultura/bota.webp"],
-        category: 0
+        category: 1
     },
     {
         name: 'Cepillo desabejar',
@@ -120,7 +120,7 @@ export const products = [
         rate: 4.5,
         company: 0,
         images: ["/products/Apicultura/cepillo.webp"],
-        category: 0
+        category: 1
     },
     {
         name: 'Espátula europea roja',
@@ -131,7 +131,7 @@ export const products = [
         rate: 4.5,
         company: 0,
         images: ["/products/Apicultura/espatula.webp"],
-        category: 0
+        category: 1
     },
     {
         name: 'Espátula europea roja',
@@ -142,7 +142,7 @@ export const products = [
         rate: 4.5,
         company: 0,
         images: ["/products/Apicultura/guantes.webp"],
-        category: 0
+        category: 1
     },
 
     //Insecticidas
@@ -154,9 +154,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Apicultura/guantes.webp"],
-        category: 0
+        category: 4
     },
 
     {
@@ -166,9 +166,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/armero35.webp"],
-        category: 0
+        category: 4
     },
 
     {
@@ -178,9 +178,9 @@ export const products = [
         description: "",
         price: 300,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/armero70.webp"],
-        category: 0
+        category: 4
     },
     {
         name: 'Cepadik',
@@ -189,9 +189,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/cepadik.webp"],
-        category: 0
+        category: 4
     },
     {
         name: 'Landris',
@@ -200,9 +200,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/landris.webp"],
-        category: 0
+        category: 4
     },
     {
         name: 'Lubric',
@@ -211,9 +211,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/lubric.webp"],
-        category: 0
+        category: 4
     },
     {
         name: 'Raptan',
@@ -222,9 +222,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/raptan.webp"],
-        category: 0
+        category: 4
     },
     {
         name: 'Salvate',
@@ -233,9 +233,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/salvate.webp"],
-        category: 0
+        category: 4
     },
     {
         name: 'Task',
@@ -244,9 +244,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/task.webp"],
-        category: 0
+        category: 4
     },
     {
         name: 'Winner',
@@ -255,9 +255,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/winner.webp"],
-        category: 0
+        category: 4
     },
     {
         name: 'Zarper',
@@ -266,9 +266,9 @@ export const products = [
         description: "",
         price: 190,
         rate: 4.5,
-        company: 0,
+        company: 1,
         images: ["/products/Insecticidas/zarper.webp"],
-        category: 0
+        category: 4
     },
 
     // Fertilizante
@@ -280,7 +280,7 @@ export const products = [
         description: "",
         price: 430,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Fertilizante/fertilizanteCactus.webp"],
         category: 0
     },
@@ -292,7 +292,7 @@ export const products = [
         description: "",
         price: 550,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Fertilizante/fertilizanteColorPremium.webp"],
         category: 0
     },
@@ -304,7 +304,7 @@ export const products = [
         description: "",
         price: 230,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Fertilizante/fertilizanteFlores.webp"],
         category: 0
     },
@@ -316,7 +316,7 @@ export const products = [
         description: "",
         price: 230,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Fertilizante/fertilizanteMultiaccion.webp"],
         category: 0
     },
@@ -328,7 +328,7 @@ export const products = [
         description: "",
         price: 440,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Fertilizante/fertilizanteSuperNutriente.webp"],
         category: 0
     },
@@ -340,7 +340,7 @@ export const products = [
         description: "",
         price: 2000,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Fertilizante/fertilizanteUreaS.webp"],
         category: 0
     },
@@ -354,9 +354,9 @@ export const products = [
         description: "",
         price: 1000,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Herramientas/bolsoHerramientas.webp"],
-        category: 0
+        category: 2
     },
 
     {
@@ -366,9 +366,9 @@ export const products = [
         description: "",
         price: 1500,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Herramientas/cortadoraManual.webp"],
-        category: 0
+        category: 2
     },
 
     {
@@ -378,9 +378,9 @@ export const products = [
         description: "",
         price: 300,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Herramientas/escobillon.webp"],
-        category: 0
+        category: 2
     },
 
     {
@@ -390,9 +390,9 @@ export const products = [
         description: "",
         price: 900,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Herramientas/herramientasJardinNinos.webp"],
-        category: 0
+        category: 2
     },
     {
         name: 'Manguera 1/2',
@@ -401,9 +401,9 @@ export const products = [
         description: "",
         price: 160,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Herramientas/manguera.webp"],
-        category: 0
+        category: 2
     },
 
     {
@@ -413,9 +413,9 @@ export const products = [
         description: "",
         price: 21740,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Herramientas/motobomba.webp"],
-        category: 0
+        category: 2
     },
     {
         name: 'Sierra Jardin 12, Mango de Madera',
@@ -424,9 +424,77 @@ export const products = [
         description: "",
         price: 21740,
         rate: 4.5,
-        company: 0,
+        company: 2,
         images: ["/products/Herramientas/sierraJardin.webp"],
-        category: 0
+        category: 2
+    },
+
+    //Semillas
+    {
+        name: 'Semillas Brocoli',
+        slug: "semillasBrocoli",
+        short_description: "Semilla de brócoli en presentación de 2 gramos",
+        description: "",
+        price: 170,
+        rate: 4.5,
+        company: 3,
+        images: ["/products/Semillas/semillasBrocoli.webp"],
+        category: 3
+    },
+    {
+        name: 'Semillas Cebolla',
+        slug: "semillasCebolla",
+        short_description: "Semillas de cebolla con ciclo de cosecha de 4 meses, disponibles en presentación de 2 gramos.",
+        description: "",
+        price: 170,
+        rate: 4.5,
+        company: 3,
+        images: ["/products/Semillas/semillasCebolla.webp"],
+        category: 3
+    },
+    {
+        name: 'Semillas Chile',
+        slug: "semillasChile",
+        short_description: "Semillas de chile jalapeño con ciclo de cosecha de 70 días, disponibles en presentación de 2 gramos.",
+        description: "",
+        price: 170,
+        rate: 4.5,
+        company: 3,
+        images: ["/products/Semillas/semillasChile.webp"],
+        category: 3
+    },
+    {
+        name: 'Semillas Chiltoma',
+        slug: "semillasChiltoma",
+        short_description: "Semilla de chiltoma en presentación de 2 gramos",
+        description: "",
+        price: 170,
+        rate: 4.5,
+        company: 3,
+        images: ["/products/Semillas/semillasChiltoma.webp"],
+        category: 3
+    },
+    {
+        name: 'Semillas Espinaca',
+        slug: "semillasEspinaca",
+        short_description: "Semilla de espinaca en presentación de 2 gramos",
+        description: "",
+        price: 170,
+        rate: 4.5,
+        company: 3,
+        images: ["/products/Semillas/semillasEspinaca.webp"],
+        category: 3
+    },
+    {
+        name: 'Semillas Espinaca',
+        slug: "semillasRabano",
+        short_description: "Semillas de rábano con ciclo de cosecha de 6 semanas, disponibles en presentación de 2 gramos.",
+        description: "",
+        price: 170,
+        rate: 4.5,
+        company: 3,
+        images: ["/products/Semillas/semillasRabano.webp"],
+        category: 3
     },
     
 ];
