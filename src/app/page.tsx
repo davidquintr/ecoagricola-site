@@ -25,18 +25,18 @@ export default function Home() {
       </EntireSection>
       <EntireSection title={dictionary.home.products.title} description={dictionary.home.products.description}>
         <ul className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {
-            products.map((product, index) => (
+            {
+            products.slice(0, 8).map((product, index) => (
               <ProductCard
-                slug={product.slug}
-                key={index}
-                image={product.images[0]}
-                name={product.name}
-                price={product.price}
-                company={product.company}
+              slug={product.slug}
+              key={index}
+              image={product.images[0]}
+              name={product.name}
+              price={product.price}
+              company={product.company}
               />
             ))
-          }
+            }
         </ul>
       </EntireSection>
       <section className="flex flex-col gap-8 py-16 px-4 max-w-[1536px] mx-auto text-white">

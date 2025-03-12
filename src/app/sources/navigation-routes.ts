@@ -12,7 +12,7 @@ export const navigationRoutes = [
         name: 'Empresas',
     },
     {
-        path: '/',
+        path: '/cursos',
         name: 'Cursos',
     },
     {

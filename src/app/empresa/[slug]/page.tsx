@@ -25,7 +25,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
 
   return (
     <main className="bg-primary-500">
-      <HeroCompany icon={company.icon} title={company.name} />
+      <HeroCompany icon={company.icon} title={company.name} quantity={filteredProducts.length} />
       <section className="max-w-[1536px] flex flex-col gap-8 mx-auto px-4 py-8 sm:py-16 lg:py-48">
         <div className="flex justify-between text-white text-xl">
           <span>

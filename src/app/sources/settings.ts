@@ -4,4 +4,5 @@ export const settings = {
     slug_products: "producto",
     slug_product_categories: "categoria-productos",
     slug_companies: "empresa",
+    slug_courses: "curso",
 }   
