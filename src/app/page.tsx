@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <CallToActionSimple title={dictionary.home.separator.title} description={dictionary.home.separator.description} />
       <EntireSection title={dictionary.home.category_product.title} description={dictionary.home.category_product.description}>
-        <ul className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid gap-4 md:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {
             categoryProducts.map((cat, index) => (
               <CategoryProductCard image={cat.image} name={cat.name} path={cat.path} key={index} />
@@ -30,7 +30,7 @@ export default function Home() {
               <ProductCard
                 slug={product.slug}
                 key={index}
-                image={product.image}
+                image={product.images[0]}
                 name={product.name}
                 price={product.price}
                 company={product.company}
@@ -40,17 +40,17 @@ export default function Home() {
         </ul>
       </EntireSection>
       <section className="flex flex-col gap-8 py-16 px-4 max-w-[1536px] mx-auto text-white">
-        <h2 className="text-4xl font-bold font-alegreya">{dictionary.home.advantages.title}</h2>
+        <h2 className="text-2xl md:text-4xl font-bold font-alegreya">{dictionary.home.advantages.title}</h2>
         <div className="grid lg:grid-cols-2 gap-8">
           <Image className="h-full w-full rounded-2xl object-cover" src="/ilustration_home_advantages.webp" alt="ilustration advantages" width={748} height={720} />
-          <ul className="flex flex-col gap-8 text-white py-8">
+          <ul className="flex flex-col gap-8 text-white lg:py-8">
             {
               dictionary.home.advantages.items.map((advantage, index) => (
                 <li className="flex gap-2 justify-start" key={index}>
-                  <FiCheckCircle className="size-16 -mt-3" />
+                  <FiCheckCircle className="size-16 -mt-4 md:-mt-3" />
                   <div className="flex flex-col gap-1">
-                    <h3 className="text-3xl font-bold font-alegreya">{advantage.title}</h3>
-                    <p className="text-2xl leading-normal">{advantage.description}</p>
+                    <h3 className="text-xl md:text-3xl font-bold font-alegreya">{advantage.title}</h3>
+                    <p className="md:text-2xl leading-normal">{advantage.description}</p>
                   </div>
                 </li>
               ))

@@ -29,7 +29,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
         {filteredProducts.map((product, index) => (
           <ProductCard 
             key={index}
-            image={product.image}
+            image={product.images[0]}
             name={product.name}
             price={product.price}
             slug={product.slug}

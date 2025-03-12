@@ -4,9 +4,10 @@ export const products = [
         slug: "fertilizante",
         short_description: "",
         description: "",
+        rate: 4.5,
         price: 40,
         company: 0,
-        image: "/products/fertilizer.webp",
+        images: ["/products/fertilizer.webp"],
         category: 0
     },
     {
@@ -15,8 +16,9 @@ export const products = [
         short_description: "",
         description: "",
         price: 30,
+        rate: 4.5,
         company: 0,
-        image: "/products/pesticide.webp",
+        images: ["/products/pesticide.webp"],
         category: 0
     },
     {
@@ -25,8 +27,9 @@ export const products = [
         short_description: "",
         description: "",
         price: 20,
+        rate: 4.5,
         company: 0,
-        image: "/products/corn_seeds.webp",
+        images: ["/products/corn_seeds.webp"],
         category: 0
     },
     {
@@ -35,8 +38,9 @@ export const products = [
         short_description: "",
         description: "",
         price: 15000,
+        rate: 4.5,
         company: 0,
-        image: "/products/tractor.webp",
+        images: ["/products/tractor.webp"],
         category: 0
     },
     {
@@ -45,8 +49,9 @@ export const products = [
         short_description: "",
         description: "",
         price: 200,
+        rate: 4.5,
         company: 0,
-        image: "/products/drip_irrigation.webp",
+        images: ["/products/drip_irrigation.webp"],
         category: 0
     },
     {
@@ -55,8 +60,9 @@ export const products = [
         short_description: "",
         description: "",
         price: 25,
+        rate: 4.5,
         company: 0,
-        image: "/products/herbicide.webp",
+        images: ["/products/herbicide.webp"],
         category: 0
     }
 ];

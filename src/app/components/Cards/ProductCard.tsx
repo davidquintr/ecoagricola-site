@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { FaMinus, FaPlus } from "react-icons/fa"
 
-const PRODUCT_SINGLE_URL = "/product";
+const PRODUCT_SINGLE_URL = "producto";
 
 interface Props {
     name: string,
@@ -22,8 +22,8 @@ export default function ProductCard({name, slug, price, company, image} : Props)
             </Link>
             <div className="flex flex-col justify-center text-center p-4 flex-1 gap-8">
                 <div className="flex flex-col gap-1 flex-1 text-primary-500">
-                    <h3 className="text-4xl font-extrabold text-primary-600">{name}</h3>
-                    <span className="text-3xl">C${price}</span>
+                    <h3 className="text-2xl md:text-4xl font-extrabold text-primary-600">{name}</h3>
+                    <span className="text-xl md:text-3xl">C${price}</span>
                     <span>Publicado por {companies[company]?.name}</span>
                 </div>
                 <div className="flex gap-4 text-primary-500">

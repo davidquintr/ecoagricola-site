@@ -9,7 +9,7 @@ export default function Header(){
         <header className="sticky top-0 z-40 bg-white">
             <div className="flex gap-8 justify-between py-6 px-4 items-center max-w-[1536px] mx-auto">
                 <Link href="/">
-                    <Image width={81} height={64} src="/identity/logo.webp" alt="ecoagricola logo" />
+                    <Image className="size-8 md:size-16 object-contain" width={81} height={64} src="/identity/logo.webp" alt="ecoagricola logo" />
                 </Link>
                 <ul className="hidden lg:flex gap-16 text-2xl uppercase font-bold text-primary-600">
                     {
