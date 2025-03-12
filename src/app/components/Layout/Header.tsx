@@ -5,8 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiShoppingCart, FiMenu, FiX } from "react-icons/fi";
 import { useEffect, useState } from "react";
+import { useCartStore } from "@/app/store/cart";
 
 export default function Header() {
+    const { getTotalQuantity } = useCartStore()
     const pathname = usePathname();
     const [currentPath, setCurrentPath] = useState("");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,8 +39,9 @@ export default function Header() {
                 
                 {/* Desktop Icons */}
                 <div className="flex justify-end flex-1 lg:!flex-none gap-8 text-primary-600">
-                    <Link href={"/carrito"}>
+                    <Link className="relative" href={"/carrito"}>
                         <FiShoppingCart className="size-8" aria-label="shopping-cart" />
+                        <span className="bg-primary-400 p-2 absolute -top-4 leading-3 rounded-full text-white -right-4">{getTotalQuantity()}</span>
                     </Link>
                 </div>
                 

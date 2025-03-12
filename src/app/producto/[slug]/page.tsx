@@ -1,5 +1,6 @@
 import ShareObject from "@/app/components/General/ShareObject";
 import ImagePreview from "@/app/components/SingleProduct/ImagePreview";
+import QuantityHandler from "@/app/components/SingleProduct/QuantityHandler";
 import { categoryProducts } from "@/app/sources/category-products";
 import { companies } from "@/app/sources/companies";
 import { dictionary } from "@/app/sources/dictionary";
@@ -67,6 +68,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 <span className="text-4xl">{settings.currency_symbol} {product.price}</span>
                 <p className="text-xl">{product.short_description}</p>
               </div>
+              
+              <QuantityHandler image={product.images[0]} slug={product.slug} name={product.name} />
 
               <div className="flex flex-col gap-2">
                 <span className="font-bold">{dictionary.single_product.published_by}</span>

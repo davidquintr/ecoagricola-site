@@ -12,11 +12,12 @@ type CartStore = {
   removeFromCart: (productSlug: string) => void;
   clearCart: () => void;
   setProductQuantity: (productSlug: string, quantity: number) => void;
+  getTotalQuantity: () => number;
 };
 
 export const useCartStore = create<CartStore>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       cart: [],
       addToCart: (productSlug, quantity) =>
         set((state) => {
@@ -41,6 +42,10 @@ export const useCartStore = create<CartStore>()(
             item.productSlug === productSlug ? { ...item, quantity } : item
           ),
         })),
+      getTotalQuantity: () => {
+        const state = get();
+        return state.cart.reduce((total, item) => total + item.quantity, 0);
+      },
     }),
     { name: "cart-storage" }
   )

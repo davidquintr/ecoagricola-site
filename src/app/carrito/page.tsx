@@ -117,7 +117,7 @@ export default function Carrito() {
                     <div className="bg-white p-8 rounded-xl max-w-[1024px] w-full">
                         <h2 className="text-3xl text-primary-700 font-bold mb-4">Formulario de Pago</h2>
                         <form onSubmit={handleFinalizeTransaction} className="flex flex-col gap-4">
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid lg:grid-cols-2 gap-4">
                                 <div className="flex flex-col gap-4">
                                     <div className="flex gap-1 items-center">
                                         <FaUserAlt />
@@ -231,6 +231,14 @@ export default function Carrito() {
                                         <FaPaypal />
                                     </ul>
                                 </div>
+                            </div>
+                            <div className="flex justify-between gap-4 text-xl">
+                                <span className="font-bold">Total</span>
+                                <span>{settings.currency_symbol} {totalPrice}</span>
+                            </div>
+                            <div className="flex justify-between gap-4 text-xl">
+                                <span className="font-bold">Artículos</span>
+                                <span>{totalItems}</span>
                             </div>
                             <button
                                 type="submit"
