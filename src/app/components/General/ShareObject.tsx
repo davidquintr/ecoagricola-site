@@ -1,18 +1,26 @@
 "use client"
 import { sharer } from "@/app/sources/sharer";
 import Link from "next/link";
-
+import { useEffect, useState } from "react";
 
 export default function ShareObject() {
-    return(
+    const [currentUrl, setCurrentUrl] = useState("");
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setCurrentUrl(window.location.href);
+        }
+    }, []);
+
+    return (
         <div className="flex gap-2">
             {
                 sharer.map((item, index) => (
-                    <Link key={index} href={`${item.url}?currentUrl=${encodeURIComponent(window.location.href)}`}>
+                    <Link key={index} href={`${item.url}?currentUrl=${encodeURIComponent(currentUrl)}`}>
                         <item.icon className="text-shades-500 size-8" />
                     </Link>
                 ))
             }
         </div>
-    )
+    );
 }
