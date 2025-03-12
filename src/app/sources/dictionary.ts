@@ -53,6 +53,11 @@ export const dictionary = {
         description: "Ofrecemos una amplia selección de productos agrícolas frescos y de alta calidad, directamente del campo a tu hogar o negocio. Contamos con frutas y verduras de temporada, semillas, fertilizantes, herramientas y todo lo necesario para garantizar una producción eficiente y sostenible.",
         icon: "/pages/products_icon.webp",
     },
+    tutorials_page: {
+        title: "Tutoriales",
+        description: "Los tutoriales son clave en nuestra labor, ya que facilitan el aprendizaje y la adquisición de habilidades. Para garantizar su calidad, mantenemos una estructura clara, una coordinación eficiente y una mejora continua en contenidos y formatos. Así, aseguramos que cada tutorial sea comprensible, accesible y útil para nuestra audiencia.",
+        icon: "/pages/tutorials_icon.webp",
+    },
     companies_page: {
         title: "Empresas",
         description: "Las empresas que colaboran con nosotros desempeñan un papel fundamental en nuestro funcionamiento. Mantener una relación estrecha y bien coordinada con ellas es esencial para garantizar que todas las operaciones se desarrollen de manera eficiente y sin contratiempos. Su apoyo y cooperación nos permiten optimizar nuestros procesos, fortalecer nuestra capacidad de respuesta y asegurar que cada aspecto de nuestra actividad se mantenga en orden.",
