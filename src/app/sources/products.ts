@@ -146,22 +146,9 @@ export const products = [
     },
 
     //Insecticidas
-
     {
         name: 'Armero 35',
-        slug: "Armero35",
-        short_description: "Insecticida sistémico a base de imidacloprid para el control de insectos chupadores.",
-        description: "",
-        price: 190,
-        rate: 4.5,
-        company: 1,
-        images: ["/products/Apicultura/guantes.webp"],
-        category: 4
-    },
-
-    {
-        name: 'Armero 35',
-        slug: "qrmero35",
+        slug: "armero35",
         short_description: "Insecticida sistémico a base de imidacloprid para el control de insectos chupadores.",
         description: "",
         price: 190,
