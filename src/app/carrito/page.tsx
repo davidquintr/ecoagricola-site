@@ -114,7 +114,7 @@ export default function Carrito() {
 
             {isModalOpen && !isTransactionSuccessful && (
                 <div className="fixed inset-0 bg-primary-800 bg-opacity-50 flex justify-center items-center z-50">
-                    <div className="bg-white p-8 rounded-xl max-w-[1024px] w-full">
+                    <div className="bg-white p-8 rounded-xl max-w-[1024px] w-full max-h-[70vh] overflow-auto">
                         <h2 className="text-3xl text-primary-700 font-bold mb-4">Formulario de Pago</h2>
                         <form onSubmit={handleFinalizeTransaction} className="flex flex-col gap-4">
                             <div className="grid lg:grid-cols-2 gap-4">
