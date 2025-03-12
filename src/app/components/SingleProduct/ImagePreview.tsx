@@ -38,7 +38,7 @@ export default function ImagePreview({ images }: Props) {
   return (
     <>
       <Image
-        className="border border-primary-500 rounded-[8px]"
+        className="border border-primary-500 rounded-[8px] w-full"
         alt="product image"
         src={images[currentImageIndex]}
         width={512}

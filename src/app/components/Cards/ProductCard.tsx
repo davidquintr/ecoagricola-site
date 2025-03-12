@@ -58,7 +58,7 @@ export default function ProductCard({name, slug, price, company, image} : Props)
                         <span className="text-xl flex-1">0</span>
                         <QuantityButton icon={FaPlus} disabled={false} onClick={handlePlusClick}  />
                     </div>
-                    <button className="border cursor-pointer active:scale-95 rounded-xl border-primary-500 flex-1 px-4 py-2 text-sm text-primary-500 hover:bg-primary-500 hover:text-white transition-all">
+                    <button className="border cursor-pointer active:scale-95 rounded-[8px] border-primary-500 flex-1 px-4 py-2 text-sm text-primary-500 hover:bg-primary-500 hover:text-white transition-all">
                         Agregar
                     </button>
                 </div>

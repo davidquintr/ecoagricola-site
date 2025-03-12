@@ -11,7 +11,7 @@ export default function Header(){
                 <Link href="/">
                     <Image className="size-8 md:size-16 object-contain" width={81} height={64} src="/identity/logo.webp" alt="ecoagricola logo" />
                 </Link>
-                <ul className="hidden lg:flex gap-16 text-2xl uppercase font-bold text-primary-600">
+                <ul className="hidden lg:flex gap-8 lg:gap-16 text-xl xl:text-2xl uppercase font-bold text-primary-600">
                     {
                         navigationRoutes.map((route, index) => (
                             <li className="hover:scale-125 transition-transform" key={index}>

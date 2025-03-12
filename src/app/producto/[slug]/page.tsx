@@ -49,14 +49,13 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
   return (
     <main className="bg-primary-500">
-      <section className="py-32 px-4 flex gap-8 bg-white bg-[url('/divider.webp')] bg-bottom bg-repeat-x bg-[auto_64px]">
+      <section className="py-4 pb-32 md:py-32 px-4 flex gap-8 bg-white bg-[url('/divider.webp')] bg-bottom bg-repeat-x bg-[auto_64px]">
         <div className="max-w-[1536px] mx-auto w-full">
-          <div className="flex gap-8">
-            <picture className="flex flex-col gap-4 max-w-[512px]">
+          <div className="flex flex-col lg:flex-row gap-8">
+            <picture className="flex flex-col gap-4 lg:max-w-[512px]">
               <ImagePreview images={product.images} />
             </picture>
             <div className="flex flex-col gap-8 flex-1">
-
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                   <div>
