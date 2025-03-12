@@ -16,7 +16,7 @@ export const navigationRoutes = [
         name: 'Cursos',
     },
     {
-        path: '/',
+        path: '/tutoriales',
         name: 'Tutoriales',
     }
 ];
