@@ -25,7 +25,7 @@ export default async function Page({params}: {params: Promise<{ slug: string }>}
   return (
     <main className="bg-primary-500">
       <HeroCat icon={category.icon} title={category.name} />
-      <ul className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-[1536px] mx-auto px-4 py-48">
+      <ul className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-[1536px] mx-auto px-4 py-8 sm:py-16 lg:py-48">
         {filteredProducts.map((product, index) => (
           <ProductCard 
             key={index}

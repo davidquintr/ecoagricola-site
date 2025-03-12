@@ -55,5 +55,9 @@ export const dictionary = {
     },
     category_products_page: {
         title: "Categorías de Productos",
+    },
+    single_product: {
+        share: "Compartir:",
+        published_by: "Publicado por:",
     }
 }
