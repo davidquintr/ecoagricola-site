@@ -1,11 +1,10 @@
 "use client"
 import { companies } from "@/app/sources/companies"
+import { settings } from "@/app/sources/settings";
 import Image from "next/image"
 import Link from "next/link"
 import { IconType } from "react-icons";
 import { FaMinus, FaPlus } from "react-icons/fa"
-
-const PRODUCT_SINGLE_URL = "producto";
 
 interface Props {
     name: string,
@@ -43,7 +42,7 @@ export default function ProductCard({name, slug, price, company, image} : Props)
 
     return(
         <li className="flex flex-col rounded-2xl overflow-hidden bg-white">
-            <Link className="w-full h-auto aspect-square" href={`/${PRODUCT_SINGLE_URL}/${slug}`}>
+            <Link className="w-full h-auto aspect-square" href={`/${settings.slug_products}/${slug}`}>
                 <Image className="size-full object-contain" src={image} alt={name.toLocaleLowerCase()} width={480} height={480} />
             </Link>
             <div className="flex flex-col justify-center text-center p-4 flex-1 gap-8">

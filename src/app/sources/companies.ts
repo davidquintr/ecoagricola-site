@@ -11,13 +11,14 @@ export const companies = [
         slug: "agropecuaria-lafise",
         description: "Agropecuaria LAFISE is a major player in the agricultural industry in Nicaragua, focusing on sustainable farming practices.",
         website: "http://www.lafise.com",
-        icon: ""
+        icon: "/category-product/beekeeping_icon.webp"
     },
     {
         name: "CISA Exportadora",
         slug: "cisa-exportadora",
         description: "CISA Exportadora is a leading exporter of coffee and other agricultural products from Nicaragua.",
         website: "http://www.cisaexportadora.com",
-        icon: ""
+        icon: "/category-product/beekeeping_icon.webp"
+
     }
 ]
