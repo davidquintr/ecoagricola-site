@@ -13,15 +13,15 @@ export default function VideoDynamicPlayer() {
     };
 
     return (
-        <div className="flex flex-col gap-8 max-w-[1536px] mx-auto px-4 py-8 sm:py-16 lg:py-48">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+        <div className="flex flex-col lg:flex-row gap-8 max-w-[1536px] mx-auto px-4 py-8 sm:py-16 lg:py-48">
+            <div className="relative aspect-video lg:max-w-[1024px] lg:max-h-[576px] size-full">
                 <YouTube
                     className="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden"
                     videoId={tutorials[selectedTutorial].player_id}
                     opts={opts}
                 />
             </div>
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <ul className="flex flex-col gap-4">
                 {tutorials.map((tutorial, index) => (
                     <li
                         key={index}

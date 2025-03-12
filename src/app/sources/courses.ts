@@ -43,7 +43,7 @@ export const courses = [
         level: "Avanzado",
         duration: "8 horas",
         lesson_count: "3 lecciones",
-        image: "/courses/introduccion-a-la-agricultura_image.webp",
+        image: "/courses/tecnicas-avanzadas-de-cultivo_image.webp",
         units: [
             {
                 title: "Agricultura de Precisión",
@@ -76,7 +76,7 @@ export const courses = [
         level: "Básico",
         duration: "5 horas",
         lesson_count: "3 lecciones",
-        image: "/courses/introduccion-a-la-agricultura_image.webp",
+        image: "/courses/manejo-de-ganado-y-produccion-pecuaria_image.webp",
         units: [
             {
                 title: "Introducción a la Producción Pecuaria",
@@ -109,7 +109,7 @@ export const courses = [
         level: "Intermedio",
         duration: "7 horas",
         lesson_count: "2 lecciones",
-        image: "/courses/introduccion-a-la-agricultura_image.webp",
+        image: "/courses/agrotecnologia-e-innovacion_image.webp",
         units: [
             {
                 title: "Digitalización en la Agricultura",
@@ -138,7 +138,7 @@ export const courses = [
         level: "Intermedio",
         duration: "6 horas",
         lesson_count: "2 lecciones",
-        image: "/courses/introduccion-a-la-agricultura_image.webp",
+        image: "/courses/comercializacion-y-mercados-agropecuarios_image.webp",
         units: [
             {
                 title: "Introducción al Comercio Agropecuario",

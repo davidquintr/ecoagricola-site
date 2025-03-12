@@ -13,8 +13,8 @@ export default function Empresas() {
                 {
                     companies.map((company, index) => (
                         <li key={index}>
-                            <Link className="flex flex-col items-center justify-center gap-4 text-white" href={`/${settings.slug_companies}/${company.slug}`}>
-                                <Image src={company.icon} width={300} height={300} className="brightness-0 invert-100 object-contain" alt={company.name.toLocaleLowerCase()}  />
+                            <Link className="flex flex-col h-full items-center justify-center gap-4 text-white" href={`/${settings.slug_companies}/${company.slug}`}>
+                                <Image src={company.icon} width={300} height={300} className="brightness-0 invert-100 object-contain aspect-square" alt={company.name.toLocaleLowerCase()}  />
                                 <h2>{company.name}</h2>
                             </Link>                            
                         </li>
