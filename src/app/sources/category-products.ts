@@ -30,5 +30,13 @@ export const categoryProducts = [
         path: "/categoria-productos/semillas",
         icon: "/category-product/seeds_icon.webp",
         image: "/category-product/seeds.webp"
+    },
+    {
+        name: "Insecticidas",
+        slug: "insecticidas",
+        description: "Sustancias clave para el control de plagas en la agricultura y el hogar.",
+        path: "/categoria-productos/insecticidas",
+        icon: "/category-product/insecticide_icon.webp",
+        image: "/category-product/insecticide.webp"
     }
 ]

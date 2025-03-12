@@ -20,5 +20,37 @@ export const companies = [
         website: "http://www.cisaexportadora.com",
         icon: "/category-product/beekeeping_icon.webp"
 
+    },
+    {
+        name: "Pantaleon",
+        slug: "pantaleon",
+        description: "Somos una agroindustria que procesa caña de azúcar de forma responsable para producir azúcar, mieles, alcoholes y energía.",
+        website: "https://www.pantaleon.com/",
+        icon: "/Empresas/Pantaleon.svg"
+
+    },
+    {
+        name: "Grupo Cohen",
+        slug: "grupoCohen",
+        description: "Somos una agroindustria que procesa caña de azúcar de forma responsable para producir azúcar, mieles, alcoholes y energía.",
+        website: "https://grupocoen.com/?locale=es",
+        icon: "/Empresas/GrupoCohen.svg"
+
+    },
+    {
+        name: "Monisa",
+        slug: "monisa",
+        description: "Somos una agroindustria que procesa caña de azúcar de forma responsable para producir azúcar, mieles, alcoholes y energía.",
+        website: "https://monisa.com/",
+        icon: "/Empresas/Monisa.svg"
+
+    },
+    {
+        name: "Carnes San Martín",
+        slug: "carnesSanMartin",
+        description: "Somos una agroindustria que procesa caña de azúcar de forma responsable para producir azúcar, mieles, alcoholes y energía.",
+        website: "https://sanmartin.com.ni/",
+        icon: "/Empresas/CarnesSanMartin.svg"
+
     }
 ]
