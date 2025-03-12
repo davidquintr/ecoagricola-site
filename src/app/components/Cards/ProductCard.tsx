@@ -41,11 +41,11 @@ export default function ProductCard({name, slug, price, company, image} : Props)
   }
 
     return(
-        <li className="flex flex-col rounded-2xl overflow-hidden bg-white">
-            <Link className="w-full h-auto aspect-square" href={`/${settings.slug_products}/${slug}`}>
-                <Image className="size-full object-contain" src={image} alt={name.toLocaleLowerCase()} width={480} height={480} />
+        <li className="flex flex-col rounded-2xl overflow-hidden">
+            <Link className="w-full h-auto aspect-square p-2 bg-white hover:bg-primary-300 transition-all" href={`/${settings.slug_products}/${slug}`}>
+                <Image className="size-full object-contain rounded-xl" src={image} alt={name.toLocaleLowerCase()} width={480} height={480} />
             </Link>
-            <div className="flex flex-col justify-center text-center p-4 flex-1 gap-8">
+            <div className="flex flex-col justify-center text-center p-4 flex-1 gap-8 bg-white">
                 <div className="flex flex-col gap-1 flex-1 text-primary-500">
                     <h3 className="text-2xl md:text-4xl font-extrabold text-primary-600">{name}</h3>
                     <span className="text-xl md:text-3xl">C${price}</span>

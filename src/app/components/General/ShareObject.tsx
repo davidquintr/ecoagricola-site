@@ -16,7 +16,7 @@ export default function ShareObject() {
         <div className="flex gap-2">
             {
                 sharer.map((item, index) => (
-                    <Link key={index} href={`${item.url}?currentUrl=${encodeURIComponent(currentUrl)}`}>
+                    <Link target="_blank" key={index} href={`${item.url}${currentUrl}`}>
                         <item.icon className="text-shades-500 size-8" />
                     </Link>
                 ))
