@@ -3,7 +3,7 @@ import { navigationRoutes } from "@/app/sources/navigation-routes";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FiUser, FiSearch, FiShoppingCart, FiMenu, FiX } from "react-icons/fi";
+import { FiShoppingCart, FiMenu, FiX } from "react-icons/fi";
 import { useEffect, useState } from "react";
 
 export default function Header() {

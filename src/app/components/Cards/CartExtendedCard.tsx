@@ -8,7 +8,6 @@ import { useCallback, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { IconType } from "react-icons";
 import { FaMinus, FaPlus } from "react-icons/fa";
-import { FaXmark } from "react-icons/fa6";
 
 interface Props {
     slug: string;
