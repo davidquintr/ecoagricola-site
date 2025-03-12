@@ -11,9 +11,9 @@ import { FaStar, FaStarHalf } from "react-icons/fa";
 
 function StarRating({ rate }: { rate: number }) {
   return (
-    <div className="flex gap-2">
+    <ul className="flex gap-2">
       {[...Array(5)].map((_, i) => (
-        <span key={i} className="relative z-10 min-w-8 min-h-8">
+        <li key={i} className="relative z-10 min-w-8 min-h-8">
           {rate >= i + 1 ? (
             <FaStar className="size-8 z-20 text-primary-400" />
           ) : rate >= i + 0.5 ? (
@@ -24,9 +24,9 @@ function StarRating({ rate }: { rate: number }) {
           ) : (
             <FaStar className="size-8 z-20 text-shades-100" />
           )}
-        </span>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
@@ -49,7 +49,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
   return (
     <main className="bg-primary-500">
-      <section className="py-32 px-4 flex gap-8 bg-white">
+      <section className="py-32 px-4 flex gap-8 bg-white bg-[url('/divider.webp')] bg-bottom bg-repeat-x bg-[auto_64px]">
         <div className="max-w-[1536px] mx-auto w-full">
           <div className="flex gap-8">
             <picture className="flex flex-col gap-4 max-w-[512px]">
@@ -79,10 +79,13 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
                 <ShareObject />
               </div>
 
-              
             </div>
           </div>
         </div>
+      </section>
+      <section className="flex flex-col gap-4 max-w-[1536px] mx-auto px-4 py-8 sm:py-16 lg:py-48 text-white">
+        <h3 className="text-5xl font-alegreya font-bold">{dictionary.single_product.description}</h3>
+        <p className="text-xl" dangerouslySetInnerHTML={{__html: product.description}} />
       </section>
     </main>
   );

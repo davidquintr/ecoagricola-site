@@ -3,7 +3,7 @@ export const products = [
         name: 'Fertilizante',
         slug: "fertilizante",
         short_description: "Mejora la fertilidad del suelo.",
-        description: "",
+        description: "El fertilizante es un producto diseñado para mejorar la fertilidad del suelo y proporcionar los nutrientes esenciales que las plantas necesitan para crecer de manera saludable. Puede ser de origen orgánico, como el compost y el estiércol, o sintético, elaborado con compuestos químicos específicos. Su función principal es suplir elementos clave como nitrógeno, fósforo y potasio, esenciales para el desarrollo de raíces, hojas y frutos. Su uso adecuado aumenta la producción agrícola, mejora la calidad de los cultivos y optimiza el rendimiento del suelo a largo plazo.",
         rate: 0.5,
         price: 40,
         company: 0,

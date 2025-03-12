@@ -59,5 +59,11 @@ export const dictionary = {
     single_product: {
         share: "Compartir:",
         published_by: "Publicado por:",
+        description: "Descripción",
+    },
+    showing_products: { 
+        quantity_text: "Productos",
+        only_one_text: "Mostrando el único producto",
+        empty_text: "Sin productos disponibles",
     }
 }
