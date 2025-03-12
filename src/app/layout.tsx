@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import { dictionary } from "./sources/dictionary";
+import { Toaster } from "react-hot-toast";
 
 const alegreyaFont = Alegreya({
   variable: "--font-alegreya",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Toaster position="bottom-right" />
         <Footer />
       </body>
     </html>

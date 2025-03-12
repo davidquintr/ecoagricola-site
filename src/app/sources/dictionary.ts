@@ -11,8 +11,8 @@ export const dictionary = {
             }
         },
         separator: {
-            title: "Oh no hermano",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra, ante in elementum eleifend, felis ex aliquet justo, sed gravida nisi felis vel nisi."
+            title: "Venta de productos exclusivos para agricultores profesionales a precios competitivos",
+            description: "Expertos en insumos agrícolas, ofrecemos productos de calidad al mejor precio. Con varios años de experiencia, brindamos soluciones para plagas, enfermedades y nutrición de cultivos. Compra fácilmente en latiendadelagricultor.com y recibe tu pedido en casa o en tu finca."
         },
         category_product: {
             title: "Categorías de Productos",

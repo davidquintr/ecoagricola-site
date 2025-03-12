@@ -19,10 +19,9 @@ export default function Header() {
         <header className="sticky top-0 z-40 bg-white">
             <div className="flex gap-8 justify-between py-6 px-4 items-center max-w-[1536px] mx-auto">
                 <Link href="/">
-                    <Image className="size-8 md:size-16 object-contain" width={81} height={64} src="/identity/logo.webp" alt="ecoagricola logo" />
+                    <Image className="size-12 md:size-16 object-contain" width={81} height={64} src="/identity/logo.webp" alt="ecoagricola logo" />
                 </Link>
                 
-                {/* Desktop Navigation */}
                 <ul className="hidden lg:flex gap-8 lg:gap-16 text-xl xl:text-2xl uppercase text-primary-600">
                     {navigationRoutes.map((route, index) => (
                         <li
@@ -37,14 +36,14 @@ export default function Header() {
                 </ul>
                 
                 {/* Desktop Icons */}
-                <div className="hidden lg:flex gap-8 text-primary-600">
-                    <FiUser className="size-8" aria-label="user" />
-                    <FiSearch className="size-8" aria-label="search" />
-                    <FiShoppingCart className="size-8" aria-label="shopping-cart" />
+                <div className="flex justify-end flex-1 lg:!flex-none gap-8 text-primary-600">
+                    <Link href={"/carrito"}>
+                        <FiShoppingCart className="size-8" aria-label="shopping-cart" />
+                    </Link>
                 </div>
                 
                 {/* Mobile Menu Button */}
-                <button className="block lg:hidden text-primary-600 size-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <button className="block lg:hidden text-primary-600 *:size-8" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? <FiX /> : <FiMenu />}
                 </button>
             </div>

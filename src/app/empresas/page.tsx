@@ -21,7 +21,6 @@ export default function Empresas() {
                     ))
                 }
             </ul>
-            <p>{}</p>
         </main>
     )
 }
