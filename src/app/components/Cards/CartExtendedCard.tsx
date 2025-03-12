@@ -47,9 +47,9 @@ export default function CartExtendedCard({slug, image, name, company, quantity, 
         toast.success(`${name} ha sido eliminado del carrito.`)
     }    
     return(
-        <li className="flex items-center bg-primary-400 p-8 rounded-2xl gap-4 text-white">
-            <Image className="rounded-xl self-start" width={192} height={192} alt={slug} src={image}  />
-            <div className="flex flex-col flex-1 gap-4">
+        <li className="flex flex-col md:flex-row items-center bg-primary-400 p-8 rounded-2xl gap-4 text-white">
+            <Image className="rounded-xl w-full md:w-auto self-start" width={192} height={192} alt={slug} src={image}  />
+            <div className="flex flex-col w-full md:w-auto flex-1 gap-4">
                 <h2 className="text-3xl font-bold">{name}</h2>
                 <span><strong className="font-semibold">Categoría:</strong> {categoryProducts[category].name}</span>
                 <div className="flex flex-col gap-1">
@@ -57,7 +57,7 @@ export default function CartExtendedCard({slug, image, name, company, quantity, 
                     <Image className="invert-100 brightness-0" src={companies[company].icon} width={64} height={64} alt={companies[company].slug} />
                 </div>
             </div>
-            <div className="flex flex-col gap-2 justify-center items-center">
+            <div className="flex flex-col  w-full md:w-auto gap-2 justify-center items-center">
                 <div className="flex flex-col gap-1 justify-center items-center">
                     <span className="text-3xl font-semibold">{settings.currency_symbol} {price * quantity}</span>
                     <span className="text-md">Precio Unitario: {settings.currency_symbol} {price}</span>

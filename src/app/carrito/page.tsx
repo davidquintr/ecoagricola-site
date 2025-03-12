@@ -80,8 +80,8 @@ export default function Carrito() {
                             {
                                 cart.length < 1 && (
                                     <li className="flex flex-col gap-4 text-white">
-                                        <span className="text-4xl">No hay elementos en el carrito</span>
-                                        <Link className="text-primary-500 hover:bg-primary-50 active:scale-95 transition-all text-2xl rounded-xl self-start p-4 bg-white" href="/productos">
+                                        <span className="text-xl md:text-4xl">No hay elementos en el carrito</span>
+                                        <Link className="text-primary-500 hover:bg-primary-50 active:scale-95 transition-all w-full text-center md:text-left md:w-auto md:text-2xl rounded-xl self-start p-4 bg-white" href="/productos">
                                             <span>Ver Productos en la Tienda</span>
                                         </Link>
                                     </li>
@@ -89,13 +89,13 @@ export default function Carrito() {
                             }
                         </ul>
                         <div className="flex flex-col self-start flex-1 w-full gap-4 p-8 bg-primary-400 rounded-2xl text-white">
-                            <h2 className="text-3xl font-bold">Resumen del carrito</h2>
+                            <h2 className="text-xl md:text-3xl font-bold">Resumen del carrito</h2>
                             <ul className="flex flex-col gap-2">
-                                <li className="flex justify-between gap-4 text-xl">
+                                <li className="flex justify-between gap-4 md:text-xl">
                                     <span>{totalItems} Artículos</span>
                                     <span>{settings.currency_symbol} {totalPrice}</span>
                                 </li>
-                                <li className="flex justify-between gap-4 text-xl">
+                                <li className="flex justify-between gap-4 md:text-xl">
                                     <span>Transporte</span>
                                     <span>~ </span>
                                 </li>
@@ -103,7 +103,7 @@ export default function Carrito() {
                             <button
                                 disabled={cart.length < 1}
                                 onClick={handleCheckoutClick}
-                                className="bg-white p-4 w-full disabled:opacity-50 disabled:pointer-events-none hover:bg-primary-50 active:scale-95 transition-all text-primary-400 cursor-pointer rounded-2xl text-xl"
+                                className="bg-white p-4 w-full disabled:opacity-50 disabled:pointer-events-none hover:bg-primary-50 active:scale-95 transition-all text-primary-400 cursor-pointer rounded-2xl md:text-xl"
                             >
                                 Pasar por Caja
                             </button>
